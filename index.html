@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/6f02d9223b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <div class="container nav__container">
+            <div class="row nav__row">
+                <a href="#" class="nav__logo">
+                    <span>Game<b class="logo__primary">Finder</b></span>
+                </a>
+                <div class="nav__links">
+                    <div class="nav__links__search">
+                        <input type="text" class="nav__links__search__input" id="nav__game__name" placeholder="Search..." onkeydown="keyDownEvent(event)">
+                        <button class="nav__links__search__btn" onclick="searchGames()">
+                            <i class="fa-solid fa-magnifying-glass" id="nav__search__icon"></i>
+                        </button>
+                    </div>
+                    <a href="#" class="nav__link nav__link__icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <a href="#" class="nav__link nav__link__icon">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header>
+        <div class="container header__container">
+            <div class="row header__row">
+                <div class="header__text">
+                    <h1 class="header__text__title">Next game, found.</h1>
+                    <h2 class="header__text__subtitle">Search over 800,000 games, with hundreds added each week.</h2>
+                    <div class="header__text__search">
+                        <input type="text" class="header__text__search__input" id="header__game__name" placeholder="Search..." onkeydown="keyDownEvent(event)">
+                        <button class="header__text__search__btn" onclick="searchGames()">
+                            <i class="fa-solid fa-magnifying-glass" id="header__search__icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="game__cards">
+                    <div class="game__cards__list" id="game__cards__list">
+                        <i class="fa-solid fa-circle-notch loading__spinner"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+        <section>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

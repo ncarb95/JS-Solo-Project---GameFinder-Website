@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+:root {
+  --primary: #9b7fd4;
+  --secondary: #f0ecf9;
+  --background: #4d4d4d;
+}
+
+/* Global Styles */
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 80px;
+}
+
+/* Navigation */
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.nav__container {
+  /* background-color: var(--background); */
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.1px solid #8d8d8d;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 32px;
+  color: #f0ecf9;
+}
+
+.logo__primary {
+  color: var(--primary);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav__links__search {
+  border: 1px solid var(--secondary);
+  padding: 4px 8px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__links__search__input {
+  width: 80px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--secondary);
+}
+
+.nav__links__search__input::placeholder {
+  color: var(--secondary);
+}
+
+.nav__links__search__btn{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#nav__search__icon {
+  color: var(--primary);
+}
+
+.nav__link {
+  font-size: 32px;
+  color: var(--secondary);
+  transition: 200ms ease;
+}
+
+.nav__link:hover {
+  color: var(--primary);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #1f1f1f; */
+  overflow: hidden;
+  background-image: url(assets/background-copy.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  height: 100%;
+}
+
+.header__row {
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header__text {
+  border: 0.1px solid #8d8d8d;
+  border-radius: 16px;
+  height: 240px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 112px;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  color: var(--secondary);
+  /* background-color: #2d2d2d; */
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header__text__title {
+  font-size: 38px;
+  color: var(--primary);
+}
+
+.header__text__subtitle {
+  color: var(--secondary);
+}
+
+.header__text__search {
+  margin-top: 16px;
+}
+
+.header__text__search {
+  border: 1px solid var(--secondary);
+  padding: 4px 8px;
+  border-radius: 9999px;
+  display: flex;
+}
+
+.header__text__search__input {
+  width: 120px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--secondary);
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.header__text__search__input::placeholder {
+  color: var(--secondary);
+  font-size: 16px;
+}
+
+.header__text__search__btn{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#header__search__icon {
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.game__cards {
+  /* background-color: #2d2535; */
+  backdrop-filter: blur(16px);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 320px;
+  margin-top: 0px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 0.1px solid #8d8d8d;
+}
+
+.game__cards__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.game__card {
+  height: 100%;
+  width: 188px;
+  /* border: 0.1px solid #8d8d8d; */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.game__card__img__wrapper {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__card__img__link {
+  width: 100%;
+  height: 100%;
+}
+
+.game__card__img {
+  height: 100%;
+  width: 100%;
+  transition: 400ms ease;
+  object-fit: cover;
+}
+
+.game__card__img__wrapper:hover .game__card__img {
+  filter: opacity(70%) blur(2px) brightness(90%);
+  background-color: #242424;
+  scale: 1.03;
+}
+
+.game__card__main {
+  line-height: 1;
+}
+
+.game__card__text {
+  background-color: #1d1d1d;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px;
+  text-align: center;
+}
+
+.game__card__title {
+  display: inline;
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
+  color: var(--secondary);
+}
+
+.game__card__title:hover {
+  text-decoration: underline;
+}
+
+.game__card__rating {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: end;
+  color: var(--primary);
+  justify-content: center;
+}
+
+.loading__spinner {
+  font-size: 64px;
+  color: var(--secondary);
+  animation: loading-spinner 1000ms infinite;
+}
+
+@keyframes loading-spinner {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
